@@ -1,0 +1,72 @@
+cat > .opencode/skill/premium-mobile-ui/SKILL.md <<'EOF'
+---
+name: premium-mobile-ui
+description: Use this skill when designing or improving app UI, especially React Native, Expo, iOS, Android, dashboards, fitness apps, food apps, wearable apps, and premium dark mode interfaces.
+---
+
+# Premium Mobile UI Skill
+
+Act like a senior mobile product designer and React Native developer.
+
+The UI must look like a real premium iOS/Android app, not a student project, not a basic website, and not plain rectangles.
+
+The design must feel:
+- modern
+- premium
+- clean
+- unique
+- polished
+- mobile-first
+- usable
+- visually impressive
+
+Design rules:
+1. Strong visual hierarchy
+2. Proper spacing
+3. Consistent alignment
+4. Rounded premium cards
+5. Clean typography
+6. Premium dark mode by default unless asked otherwise
+7. Soft contrast
+8. Beautiful section separation
+9. App-like bottom navigation
+10. High-quality dashboard cards
+11. Smooth visual rhythm
+12. No stretched desktop layouts
+
+For web preview:
+- Center the app in a phone-sized container
+- Use max width around 390px to 430px
+- Make it look like a real phone app
+- Never stretch the design across the whole browser
+
+Use:
+- layered dark backgrounds
+- subtle borders
+- gradient-like cards using View layers
+- circular score indicators
+- progress bars
+- pill badges
+- metric cards
+- modern navigation
+- emoji icons only if no icon package is installed
+
+Avoid:
+- boring flat cards
+- huge empty space
+- weak colors
+- tiny text
+- unbalanced layouts
+- generic dashboards
+- plain full-width rectangles
+- random color choices
+
+Before finalizing UI, review it like a designer:
+- Does it look premium?
+- Does it look like a real app?
+- Is it mobile-first?
+- Would a user say “wow”?
+- Is the layout clean and easy to understand?
+
+If not, improve it before finishing.
+EOF

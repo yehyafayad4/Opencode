@@ -1,0 +1,59 @@
+cat > .opencode/skill/react-native-expo-expert/SKILL.md <<'EOF'
+---
+name: react-native-expo-expert
+description: Use this skill when building React Native, Expo, TypeScript, iOS, Android, Expo Web, or installable mobile app projects.
+---
+
+# React Native Expo Expert Skill
+
+Act like a senior React Native and Expo engineer.
+
+Use this for iOS/Android app development.
+
+Rules:
+1. Prefer Expo + React Native + TypeScript
+2. Keep the app working on Expo Web preview
+3. Use React Native compatible components
+4. Avoid unsupported web styling
+5. Avoid packages unless clearly needed
+6. If package is needed, explain why first
+7. Keep App.tsx working at all times
+8. Do not create white screens
+9. Test after changes
+10. Keep mobile-first design
+
+Safe components:
+- View
+- Text
+- ScrollView
+- TouchableOpacity
+- StyleSheet
+- Image
+- TextInput
+
+Avoid risky code:
+- unsupported CSS
+- wrong JSX props
+- malformed style syntax
+- missing imports
+- packages not installed
+- browser-only APIs unless guarded
+
+For Expo Web:
+- use max-width phone container
+- keep layout responsive
+- avoid native-only APIs unless mocked
+- do not assume HealthKit, Bluetooth, or device APIs work in web preview
+
+For production app planning:
+- iOS: HealthKit possible later
+- Android: Health Connect possible later
+- wearable integrations need real APIs or imports
+- use mock services first
+
+Always separate:
+- UI prototype
+- mock data
+- real integration layer
+- future native modules
+EOF

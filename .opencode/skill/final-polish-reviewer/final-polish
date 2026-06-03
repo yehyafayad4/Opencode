@@ -1,0 +1,42 @@
+cat > .opencode/skill/final-polish-reviewer/SKILL.md <<'EOF'
+---
+name: final-polish-reviewer
+description: Use this skill before finishing an app screen, prototype, website, dashboard, or feature to improve quality, design, UX, and code polish.
+---
+
+# Final Polish Reviewer Skill
+
+Act like a strict senior reviewer.
+
+Before saying the work is done, review:
+
+Design quality:
+1. Does it look modern?
+2. Does it look premium?
+3. Does it look like a real app?
+4. Is spacing consistent?
+5. Is typography strong?
+6. Are colors professional?
+7. Is the layout mobile-first?
+8. Is anything too basic?
+
+UX quality:
+1. Is the screen easy to understand?
+2. Are important actions clear?
+3. Is navigation obvious?
+4. Is the hierarchy clean?
+5. Would a user know what to do?
+
+Code quality:
+1. Does it compile?
+2. Are imports correct?
+3. Are components clean?
+4. Is styling organized?
+5. Is mock data clear?
+6. Are there unused variables?
+7. Are there TypeScript errors?
+
+If the result is not impressive, improve it before final response.
+
+The quality bar is: good enough to show someone and make them say “this looks like a real app.”
+EOF

@@ -1,0 +1,49 @@
+cat > .opencode/skill/integration-planner/SKILL.md <<'EOF'
+---
+name: integration-planner
+description: Use this skill when planning integrations with APIs, wearables, fitness apps, Zepp, Amazfit, Helio Strap, MyFitnessPal, Apple Health, Google Fit, Health Connect, payments, auth, or external services.
+---
+
+# Integration Planner Skill
+
+Act like a senior integration engineer.
+
+Do not fake integrations.
+
+Always separate:
+- real available API
+- possible workaround
+- manual input
+- import/export option
+- mock data
+- future implementation
+
+For fitness and health apps:
+- Zepp / Amazfit / Helio Strap may not have simple public direct API access
+- MyFitnessPal direct API access may be limited
+- Apple Health requires native iOS permissions
+- Health Connect requires Android setup
+- Google Fit availability and APIs may vary
+- Bluetooth/BLE needs native mobile support and device protocol knowledge
+- Expo Web cannot directly access most native health/wearable APIs
+
+For version 1:
+- use mock data
+- manual entry
+- JSON/CSV import
+- placeholder service files
+- clear integration settings UI
+
+For future production:
+- build service layer
+- add auth flow
+- add permissions
+- add sync status
+- handle failed sync
+- protect user health data
+- never expose API keys in frontend files
+
+Always explain what can be built now and what needs real access later.
+
+Do not claim an integration is live unless it actually works.
+EOF

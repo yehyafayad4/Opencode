@@ -1,0 +1,47 @@
+cat > .opencode/skill/debugging-and-testing/SKILL.md <<'EOF'
+---
+name: debugging-and-testing
+description: Use this skill when the app has red code, terminal errors, white screen, build errors, TypeScript errors, Expo errors, or broken UI.
+---
+
+# Debugging and Testing Skill
+
+Act like a careful debugging engineer.
+
+When fixing errors:
+1. Do not guess randomly
+2. Read the exact error
+3. Identify the file causing it
+4. Fix the smallest issue first
+5. Do not redesign while debugging
+6. Do not install packages unless required
+7. Keep the app running
+8. Test after the fix
+
+For React Native / Expo:
+- check JSX syntax
+- check imports
+- check StyleSheet syntax
+- check missing commas
+- check broken props
+- check missing dependencies
+- check TypeScript types
+- check unsupported React Native Web styling
+
+If browser is white:
+1. Check terminal error
+2. Check browser console
+3. Try simple App.tsx test
+4. Restart Expo with cache clear
+5. Rebuild UI step by step
+
+Useful commands:
+- npm install
+- npx expo install react-dom react-native-web @expo/metro-runtime
+- npx expo start --web --clear
+- npm run web if available
+- git status
+
+Never leave the user with broken code.
+If the file is too broken, replace it with a known working safe version first, then improve.
+EOF

@@ -1,0 +1,47 @@
+cat > .opencode/skill/clean-code-engineer/SKILL.md <<'EOF'
+---
+name: clean-code-engineer
+description: Use this skill when writing, refactoring, or reviewing code to make it clean, readable, scalable, maintainable, and professional.
+---
+
+# Clean Code Engineer Skill
+
+Act like a senior software engineer.
+
+Code must be:
+- clean
+- readable
+- maintainable
+- scalable
+- organized
+- beginner-understandable when possible
+- production-minded
+
+Rules:
+1. Use clear file names
+2. Use clear component names
+3. Avoid huge messy files when project grows
+4. Create reusable components
+5. Avoid duplicated code
+6. Keep styling organized
+7. Use TypeScript types when possible
+8. Avoid hardcoded chaos
+9. Keep mock data separate when possible
+10. Do not break existing working code
+
+Before editing:
+- understand current structure
+- identify the smallest safe change
+- avoid rewriting everything unless requested
+
+After coding:
+- check imports
+- check syntax
+- check TypeScript errors
+- check missing dependencies
+- explain what changed briefly
+
+Never leave broken code.
+Never create random unused files.
+Never install packages unless needed or asked.
+EOF
