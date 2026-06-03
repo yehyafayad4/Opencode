@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Performance Tracker</h1>
+            <button id="mode-toggle" class="mode-toggle">🌙 Dark Mode</button>
+        </header>
+        
+        <main>
+            <!-- Metric Cards -->
+            <section class="cards">
+                <div class="card" id="focus-card">
+                    <h3>Focus</h3>
+                    <p class="value" id="focus-value">0</p>
+                    <p class="label">hours/day</p>
+                </div>
+                
+                <div class="card" id="tasks-card">
+                    <h3>Tasks</h3>
+                    <p class="value" id="tasks-value">0</p>
+                    <p class="label">completed</p>
+                </div>
+                
+                <div class="card" id="study-card">
+                    <h3>Study</h3>
+                    <p class="value" id="study-value">0</p>
+                    <p class="label">hours</p>
+                </div>
+                
+                <div class="card" id="gym-card">
+                    <h3>Gym</h3>
+                    <p class="value" id="gym-value">0</p>
+                    <p class="label">sessions/week</p>
+                </div>
+            </section>
+            
+            <!-- Input Form -->
+            <section class="input-section">
+                <h2>Log Performance</h2>
+                <form id="metric-form">
+                    <div class="form-group">
+                        <label for="metric-select">Metric:</label>
+                        <select id="metric-select">
+                            <option value="focus">Focus</option>
+                            <option value="tasks">Tasks</option>
+                            <option value="study">Study</option>
+                            <option value="gym">Gym</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="score-input">Score (1-10):</label>
+                        <input type="number" id="score-input" min="1" max="10" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="note-input">Note (optional):</label>
+                        <input type="text" id="note-input" placeholder="Add a note...">
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Log Entry</button>
+                </form>
+            </section>
+            
+            <!-- Today Summary -->
+            <section class="summary-section">
+                <h2>Today's Summary</h2>
+                <div id="today-summary">
+                    <p>No entries logged today yet.</p>
+                </div>
+            </section>
+            
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <h2>Statistics</h2>
+                <div id="stats-content">
+                    <p>Start logging to see statistics.</p>
+                </div>
+            </section>
+            
+            <!-- Goal Progress -->
+            <section class="goal-section">
+                <h2>Daily Goals</h2>
+                <div id="goals-container">
+                    <div class="goal-item">
+                        <label for="focus-goal">Focus Goal (hours):</label>
+                        <input type="number" id="focus-goal" min="0" value="8">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="focus-progress"></div>
+                        </div>
+                        <p class="progress-text" id="focus-progress-text">0/8 hours</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
